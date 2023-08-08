@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!----  I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Gan jia Jing
+ Student ID:22026391
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 4/7/2023 11.12PM
+  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSuperMarket!</title>
+    <link rel="stylesheet" href="css/html.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <img src="pics/ceeb3d02ced53a1a052302e37784b8a1.jpg"
+        style="object-fit: cover;object-position: top; margin: 0; z-index: -1; position: absolute;filter: blur(2px);">
+    <p style="text-align: center;font-size: 35px;margin-bottom: 0;margin-top: 0;padding-top: 20px;">
+        Welcome to </p>
+    <p class="logo">
+        TheSuperMarket!</p>
+
+    <div style="width: 400px;background-color: rgb(55, 20, 183);height: 430px;margin: auto;border-radius: 100px;">
+        <p
+            style="color: white;font-family: Arial, Helvetica, sans-serif;padding-top: 90px; text-align: center;font-size: 15px;">
+            create an account</p>
+        <input id="email" type="email" placeholder="Email" class="inputbox">
+
+        <input id="pw" type="text" placeholder="Password" class="inputbox" style="margin-top: 5px;">
+
+        <input id="rpw" type="text" placeholder="Re-enter Password" class="inputbox" style="margin-top: 5px;">
+
+
+        <button onclick="checkingInfo()" class="buttonnext"
+            style="margin-top: 5px;">Create Account</button>
+
+        <p id="message" style="color:red;text-align: center;">
+
+        </p>
+
+
+
+
+    </div>
+    <script>
+        function checkingInfo() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pw").value;
+            var rpassword = document.getElementById("rpw").value;
+            console.log("rpw: " + rpassword + "pw: " + password + "     email" + email)
+            if (password == "" && email != "" && rpassword != "") {
+                document.getElementById("message").innerHTML="Password Required";
+            }
+            else if (password != "" && email == "" && rpassword != "") {
+                document.getElementById("message").innerHTML="Email Required";
+            }
+            else if (password != "" && email != "" && rpassword == "") {
+                document.getElementById("message").innerHTML="ReEnter your password";
+            }
+            else if (rpassword == "" || password == "" || email == "") {
+                document.getElementById("message").innerHTML="Fill in Login information";
+            }
+            else {
+                if(rpassword!=password){
+                    document.getElementById("message").innerHTML="Password not identical";
+                }
+                else{
+                    alert("Account Created")
+                    window.location = '2thesupermarket.html';
+                }
+                
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

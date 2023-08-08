@@ -1,0 +1,15 @@
+.icons{
+    width:120px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.circle{
+    background-color: white;
+    border-radius: 100%;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+    border-color: rgb(146, 146, 146);
+}

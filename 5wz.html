@@ -1,0 +1,98 @@
+
+  <!----  I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Koh Wen Zhong
+ Student ID:22010609
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 4/7/2023 10.12PM
+  -->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Credit Card Payment</title>
+    <style>
+      .container {
+        width: 800px; /* Increase the width to 600px */
+        border: 5px solid #ccc;
+        padding: 20px;
+        background-color: lightblue;
+      }
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .form-row label {
+        font-weight: bold;
+        margin-right: 10px;
+        flex: 0 0 180px;
+        text-align: right;
+        font-size: 12px;
+      }
+      .form-row input[type="text"] {
+        flex: 1;
+      }
+      .header {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center; /* Add text-align center for headers */
+      }
+      .long-input {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Filling in details</h2>
+      <div class="form-row">
+        <label for="name">Name on credit/debit card*:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="card_number">Credit/Debit card number*:</label>
+        <input type="text" id="card_number" name="card_number" required>
+      </div>
+      <h2>Expiry Date</h2>
+      <div class="form-row">
+        <label for="expiry_month">MM:</label>
+        <input type="text" id="expiry_month" name="expiry_month" required>
+        <label for="expiry_year">YYYY:</label>
+        <input type="text" id="expiry_year" name="expiry_year" required>
+      </div>
+      <div class="form-row">
+        <label for="cvv">CVV*:</label>
+        <input type="text" id="cvv" name="cvv" required>
+      </div>
+      <h2>Billing Address</h2>
+      <div class="form-row">
+        <label for="address1">Address Line 1:</label>
+        <input type="text" id="address1" name="address1" class="long-input" required>
+      </div>
+      <div class="form-row">
+        <label for="address2">Address Line 2:</label>
+        <input type="text" id="address2" name="address2" class="long-input" required>
+      </div>
+      <div class="form-row">
+        <label class="header" for="country">Country/Region*</label>
+        <input class="long-input" required>
+        <label class="header" for="postal_code">Postal Code</label>
+        <input class="long-input" required>
+      </div>
+      <div class="form-row">
+        <label class="header" for="city">City/Town*</label>
+        <input class="long-input" required>
+        <label class="header" for="state">State/Province</label>
+        <input class="long-input" required>
+
+      </div>
+      <a href="6Prototype baal.html">
+      <button>next</button></a>
+    </div>
+  </body>
+  </html>
+  

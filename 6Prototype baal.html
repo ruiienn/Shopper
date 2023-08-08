@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Purchase</title>
+        <style>
+            body {
+                background: lightblue;
+            }
+
+            header {
+                font-size: 25px;
+            }
+
+            button {
+                width: 160px;
+                height: 40px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <u>Complete Purchase</u>
+        </header>
+        <section>
+            <p>
+                Total Price: $________
+            </p>
+        </section>
+        <input type="text" placeholder="Coupon code">
+        <br>
+        <br>
+        <br>
+        <button onclick="PaymentAlert()">Proceed to Checkout</button>
+        <script>
+            function PaymentAlert() {
+                alert("You are going to proceed to the payment checkout page");
+    
+                window.location='checkoutpage.html';
+          
+            }
+        </script>
+    </body>
+</html>

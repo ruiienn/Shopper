@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Savings Calculator</title>
+    <style>
+        /* CSS code here*/
+    </style>
+</head>
+
+<body onload="displayDate()">
+    <div class=" container">
+        <img src="images/piggybank.PNG">
+        <h1>Savings Calculator</h1>
+        <p id="dateNow"></p>
+        <div class="entries">
+            <label for="week1">Week 1:</label>
+            <input type="text" id="week1">
+        </div>
+        <div class="entries">
+            <label for="week2">Week 2:</label>
+            <input type="text" id="week2">
+        </div>
+        <div class="entries">
+            <label for="week3">Week 3:</label>
+            <input type="text" id="week3">
+        </div>
+        <div class="entries">
+            <label for="week4">Week 4:</label>
+            <input type="text" id="week4">
+        </div>
+        <div id="calcSavingsBtn">
+
+            <input type="button" id="calcSavings" onclick="calcTotalSavings()" value=" Calculate Savings">
+        </div>
+        <div id="output"></div>
+    </div>
+    <script>
+        function displayDate() {
+            document.getElementById("dateNow").innerHTML = "Today is " + Date();
+        }
+
+
+        function calcTotalSavings() {
+            var week1Val = parseInt(document.getElementById("week1").value);
+            var week2Val = parseInt(document.getElementById("week2").value);
+            var week3Val = parseInt(document.getElementById("week3").value);
+            var week4Val = parseInt(document.getElementById("week4").value);
+            var totalSavings = week1Val + week2Val + week3Val + week4Val;
+            console.log(totalSavings);
+            document.getElementById("output").innerHTML = "Your total savings this month is$" + totalSavings;
+            document.getElementById("output").innerHTML += " <br> On average, you saved $" + totalSavings/4 + " per month";
+
+        }
+    </script>
+</body>
+
+</html>

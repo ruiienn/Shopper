@@ -1,0 +1,68 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    color: rgb(68, 0, 255);
+    text-align: center;font-size: 50px;
+    margin-top: 0;
+    text-decoration:overline;
+    margin-bottom: 0;
+}
+.inputbox{
+    width: 72%;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius:15px;
+    border-width: 0;
+    padding: 5px;
+}
+.buttonnext{
+    margin-left: 50px;
+    width: 290px;
+    border-radius: 15px;
+    border-width: 0;
+    padding: 5px;
+    background-color: white;
+}
+.buttonnext:hover{
+    cursor: pointer;
+}
+.buttonslog{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    background-color: white;
+    width: 290px;
+    margin-left:50px ;
+    border-radius: 15px;
+    height: 30px;
+    margin-bottom: 10px;
+    
+}   
+.buttonwords{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 8px;
+    text-decoration: none;
+}
+.catbutton{
+    border-width: 0;
+    border-radius: 0;
+    height: 50px;
+    width: 250px;
+    margin: 0;
+    background-color: rgb(230, 229, 229);
+}
+.catbutton:hover{
+    cursor: pointer;
+}
+.searcher{
+    height: 50px;
+    width: 250px;
+    border-width: 0;
+}
